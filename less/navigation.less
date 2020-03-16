@@ -1,1 +1,24 @@
 // Navigation Styles here
+.nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    border-bottom: 2px dashed @navigation-border;
+    height: 150px;
+    @media @mobile {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .navigation nav a {
+        font-size: 1.6rem;
+        text-decoration: none;
+        margin-left: 30px;
+        color: black;
+        @media @mobile {
+            margin-left: 15px;
+        }
+    }
+}
